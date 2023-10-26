@@ -2155,6 +2155,7 @@ body {
 }
 .BurgerMenu_menu_is-open {
   transform: none;
+  z-index: 9999;
 }
 .BurgerMenu_menu.BurgerMenu_open {
   display: flex;
