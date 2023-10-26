@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Главная</title>
+</head>
+
+<body>
+  <header class="Header_header">
+    <div class="Header_container">
+      <nav data-aos="fade-down" class="Header_header_nav">
+        <div class="ButtonGroup_button_group__container">
+          <a class="Header_button_nav" href="/music.html">Музыка</a>
+          <a class="Header_button_nav" href="/video.html">Видео</a>
+          <a class="Header_button_nav" href="/production.html">Продюсирование</a>
+        </div>
+        <div class="ButtonGroup_button_group__container">
+          <a class="Header_button_nav" href="/biography.html">Биография</a>
+          <a class="Header_button_nav" href="/poster.html">Афиша</a>
+          <a class="Header_button_nav" href="/contact.html">Контакты</a>
+        </div>
+      </nav>
+      <a href="/" class="Header_header_logo">
+        <img class="Header_header_logo_image" src="images/logo.png" alt="header_image" />
+      </a>
+    </div>
+  </header>
+  <!-- BEGIN mobile menu -->
+  <button type="button" class="BurgerMenu_button_burger">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10.5">
+      <g fill="#fff" data-name="Group 188" transform="translate(-340 -30)">
+        <rect width="35" height="1.5" data-name="Rectangle 3" rx=".75" transform="translate(340 30)"/>
+        <rect width="17" height="1.5" data-name="Rectangle 4" rx=".75" transform="translate(358 39)"/>
+      </g>
+    </svg>
+  </button>
+  <div class="BurgerMenu_menu">
+    <img class="BurgerMenu_image" src="images/logo-dark.png" alt="Header Image" />
+    <div class="BurgerMenu_links">
+      <a href="/music.html">Музыка</a><a href="/video">Видео</a><a href="/production.html">Продюсирование</a><a
+        href="/biography.html">Биография</a><a href="/poster">Афиша</a><a href="/contact.html">Контакты</a>
+    </div>
+  </div>
+  <!-- END mobile menu -->
+  <main class="App_main-template main-template">
+    <section data-aos="fade-in" class="Hero_hero"></section>
+    <section class="afisha-section">
+      <div class="src_container Poster_poster-section__container">
+        <div class="Poster_poster-title">
+          <div class="Poster_title_container">
+            <h1 data-aos="fade-up" class="Poster_title_name">Афиша мероприятий</h1>
+            <a data-aos="fade-up" href="/poster" class="Poster_title_link">Смотреть все
+              <svg xmlns="http://www.w3.org/2000/svg" width="43.609" height="18.785">
+                <g data-name="Сгруппировать 146" fill="none" stroke="#666" stroke-width="1.5">
+                  <path data-name="Контур 496" d="m33.688 18.255 8.862-8.862L33.688.531"></path>
+                  <path data-name="Линия 25" d="M0 9.393h42.109"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="Poster_poster-list">
+          <div data-aos="fade-up" data-aos-delay="100" class="PosterCard_poster-list-item">
+            <div class="PosterCard_item_container">
+              <div class="PosterCard_item_image">
+                <img class="PosterCard_item_image_value" src="images/poster_image_1.png"
+                  alt="poster_image_1" />
+              </div>
+              <div class="PosterCard_item_date">
+                <p class="PosterCard_item_date_value PosterCard_item_date_number">
+                  21
+                </p>
+                <p class="PosterCard_item_date_value PosterCard_item_date_month">
+                  Октября
+                </p>
+                <p class="PosterCard_item_date_value PosterCard_item_date_time">
+                  В 19:00
+                </p>
+              </div>
+              <div class="PosterCard_item_description">
+                <p class="PosterCard_item_name">Magnus Locus</p>
+                <span class="PosterCard_item_location">Москва</span>
+                <div class="PosterCard_item_text">
+                  <p>
+                    Сольный концерт Марта Бабаяна в легендарном клубе Магнус
+                    Локус. Любимые песни и новая программа для вас.
+                  </p>
+                </div>
+                <a href="#" class="PosterCard_item_link">Купить билет</a>
+              </div>
+            </div>
+            <div class="PosterCard_poster_third__section"></div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="300" class="PosterCard_poster-list-item">
+            <div class="PosterCard_item_container">
+              <div class="PosterCard_item_image">
+                <img class="PosterCard_item_image_value" src="images/poster_image_2.png"
+                  alt="poster_image_1" />
+              </div>
+              <div class="PosterCard_item_date">
+                <p class="PosterCard_item_date_value PosterCard_item_date_number">
+                  6
+                </p>
+                <p class="PosterCard_item_date_value PosterCard_item_date_month">
+                  Сентября
+                </p>
+                <p class="PosterCard_item_date_value PosterCard_item_date_time">
+                  В 19:00
+                </p>
+              </div>
+              <div class="PosterCard_item_description">
+                <p class="PosterCard_item_name">РАДИО «ШАНСОН»</p>
+                <span class="PosterCard_item_location">Москва</span>
+                <div class="PosterCard_item_text">
+                  <p>
+                    Прямой эфир с Мартом Бабаяном, дискуссия на
+                    тему мира шоу-бизнеса, в эфире прозвучат новые
+                    композиции, а также состоится презентация
+                    клипа на песню «Напиться».
+                  </p>
+                </div>
+                <a href="#" class="PosterCard_item_link">Купить билет</a>
+              </div>
+            </div>
+            <div class="PosterCard_poster_third__section"></div>
+          </div>
+        </div>
+        <a href="#" class="all-link afisha-section__all-link">Смотреть все
+          <svg xmlns="http://www.w3.org/2000/svg" width="27.858" height="12">
+            <g fill="#666" data-name="Group 175">
+              <path d="m21.858 12-.678-.678L26.503 6 21.18.678 21.858 0l6 6Z" data-name="Контур 496"/>
+              <path d="M26.9 6.479H0v-.958h26.9Z" data-name="Линия 25"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="VideoSection_videosection">
+      <div class="VideoSection_container">
+        <div class="VideoSection_video_inside">
+          <div class="VideoSection_video_container">
+            <button data-aos="fade-up" data-aos-delay="50" type="button" class="VideoSection_play_button">
+              <svg class="VideoSection_play_image" xmlns="http://www.w3.org/2000/svg" width="31.501" height="38.132"
+                viewBox="0 0 31.501 38.132">
+                <path id="Контур_497" data-name="Контур 497"
+                  d="M17.048,1.115a2.383,2.383,0,0,1,4.036,0L37.776,27.924A2.346,2.346,0,0,1,35.758,31.5H2.374A2.346,2.346,0,0,1,.356,27.924Z"
+                  transform="translate(31.501) rotate(90)" fill="#fff"></path>
+              </svg>
+            </button>
+            <div  data-aos="fade-up" data-aos-delay="150" class="VideoSection_hero_second_title">Новый релиз</div>
+            <div  data-aos="fade-up" data-aos-delay="450" class="VideoSection_hero_second_title_2">
+              Улица белых роз
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="music-section">
+      <div class="Creation_container">
+        <div class="Creation_creation">
+          <div class="Creation_creation_left">
+            <h2 data-aos="fade-up" class="Creation_creation_left__title">Творчество</h2>
+            <div data-aos="fade-up" data-aos-delay="50" class="Creation_creation_left__desription">
+              <p>Март Бабаян - российский певец, композитор и продюсер.</p>
+              <p>
+                Исполнитель хитов: «Миллион» «Выходи за меня», «Папина
+                дочка» «Континенты», и многие другие.
+              </p>
+              <p>Артист радио «ШАНСОН».</p>
+            </div>
+            <a data-aos="fade-up" data-aos-delay="150" href="/poster" class="Creation_title_link">Все релизы<svg xmlns="http://www.w3.org/2000/svg"
+                width="43.609" height="18.785">
+                <g data-name="Сгруппировать 146" fill="none" stroke="#666" stroke-width="1.5">
+                  <path data-name="Контур 496" d="m33.688 18.255 8.862-8.862L33.688.531"></path>
+                  <path data-name="Линия 25" d="M0 9.393h42.109"></path>
+                </g>
+              </svg></a>
+          </div>
+          <div class="Creation_creation_right">
+            <div data-aos="fade-up" data-aos-delay="450" class="Creation_creation_photo"><img src="images/creation_photo_1.png" alt="photo_1" /></div>
+            <div data-aos="fade-up" data-aos-delay="1350" class="Creation_creation_photo"><img src="images/music_3.png" alt="photo_2" /></div>
+          </div>
+          <a href="#" class="all-link music-section__all-link">Все релизы
+            <svg xmlns="http://www.w3.org/2000/svg" width="27.858" height="12">
+              <g fill="#666" data-name="Group 175">
+                <path d="m21.858 12-.678-.678L26.503 6 21.18.678 21.858 0l6 6Z" data-name="Контур 496"/>
+                <path d="M26.9 6.479H0v-.958h26.9Z" data-name="Линия 25"/>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer data-aos="fade-in" class="Footer_footer_container">
+    <div class="Footer_container">
+      <div class="Footer_footer_links">
+        <div class="Footer_first_group_links">
+          <a href="/">Telegram</a><a href="/">Vk</a><a href="/">Ok</a><a href="/">Youtube</a>
+        </div>
+        <div class="Footer_second_group_links">
+          <a href="/">Apple music</a><a href="/">Яндекс.музыка</a>
+        </div>
+      </div>
+      <div class="Footer_footer_text">
+        <p>© 2023 г. Март Бабаян - официальный сайт.</p>
+      </div>
+      <div class="Footer_footer_logic">
+        <p>Создание сайта <a href="/">Logic</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+</html>

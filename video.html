@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Видео</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="Header_header">
+    <div class="Header_container">
+      <nav class="Header_header_nav">
+        <div class="ButtonGroup_button_group__container">
+          <a class="Header_button_nav Header_button_nav_style-dark" href="/music.html">Музыка</a>
+          <a class="Header_button_nav Header_button_nav_is-active Header_button_nav_style-dark"
+            href="/video.html">Видео</a>
+          <a class="Header_button_nav Header_button_nav_style-dark" href="/production.html">Продюсирование</a>
+        </div>
+        <div class="ButtonGroup_button_group__container">
+          <a class="Header_button_nav Header_button_nav_style-dark" href="/biography.html">Биография</a>
+          <a class="Header_button_nav Header_button_nav_style-dark" href="/poster.html">Афиша</a>
+          <a class="Header_button_nav Header_button_nav_style-dark" href="/contact.html">Контакты</a>
+        </div>
+      </nav>
+      <a href="/" class="Header_header_logo"><img class="Header_header_logo_image" src="images/logo-dark.png"
+          alt="header_image" /></a>
+    </div>
+  </header>
+  <!-- BEGIN mobile menu -->
+  <button type="button" class="BurgerMenu_button_burger">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="10.5">
+      <g fill="#fff" data-name="Group 188" transform="translate(-340 -30)">
+        <rect width="35" height="1.5" data-name="Rectangle 3" rx=".75" transform="translate(340 30)" />
+        <rect width="17" height="1.5" data-name="Rectangle 4" rx=".75" transform="translate(358 39)" />
+      </g>
+    </svg>
+  </button>
+  <div class="BurgerMenu_menu">
+    <img class="BurgerMenu_image" src="images/logo-dark.png" alt="Header Image" />
+    <div class="BurgerMenu_links">
+      <a href="/music.html">Музыка</a><a href="/video">Видео</a><a href="/production.html">Продюсирование</a><a
+        href="/biography.html">Биография</a><a href="/poster">Афиша</a><a href="/contact.html">Контакты</a>
+    </div>
+  </div>
+  <!-- END mobile menu -->
+  <main class="App_main-template__Vs7qB App_inner-template inner-template video-template">
+    <div class="VideoPage_container inner-template__container">
+      <div class="VideoPage_main">
+        <div class="page-title production-template__title video-template__title">
+          <h1 class="page-title__value">Видео</h1>
+        </div>
+        <div class="VideoPage_first_video_container">
+          <div class="VideoPage_video_inside" style="background: url('images/video_1.png') no-repeat 50%/cover;">
+            <div class="VideoPage_button_inside">
+              <a href="#" target="_blank" class="VideoPage_play_button">
+                <img class="VideoPage_play__button_image"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABNCAYAAAARtbwVAAAABHNCSVQICAgIfAhkiAAABARJREFUeF7lnElrFEEYhp2fIOjBg3jy6i9Q/4i4xAURNG4YjUtiVOJGxAgRTUSCC2644EX0IOjBQxRBCYKCENy3uO/b+LwhBROM9jLV3VXVBR9dzNR01/NWTXfVV19XZcxwqlarG8g2YuOwfuw81lmpVF6YMqEdKwIC/AqH6aPAveOzdQjQFRq4eCqAN3Nsj4C7wffzEeFWSCII/h5Ak2NCdVCuBRE+xyzvdDHBVxPW8DHlFyPAuYS/c654GngDcZHMXER44hxVzArVA69LfMJasd2I8CvmNZ0pVi+8AblDZiYC3HSGLEZFbMHrUrp37MdWI8L7GNcuvIhNeAPznMxyBDhWOF1EBbKAN5e8SmY2Igy4KkKW8GL+imkAtR0RvrsmQtbwhvc+mVkIcM0lAfKCN8yHyKxAhEEXRMgbXsyvsSbsICIkHV1a1awIeAPQN/xXuGuVKMHJioRXNX9gmiy10Qt0c8w1FQ1vYB+SmYMAl/OkdwXeMJ8i04gIz/IQwTV4MWtovB7rQoTfWYrgIrzhvU1GkyUdM0kuwwtY02T5D+VH/GhbAdfhDa+8R0sR4LRNAXyBN8zyHi1ABD0d6k6+wQtYztNNWAci/KxHAR/hDa9GhposaaSYKvkML2DNDQ5gTYjwNqkCvsMb3pdkViLA4SQChAJvmOU9kjtd/oPIFBq8gL9h27D2KO9RiPCmxdX66gXqDaOmkOEN8FEy8ibrvjAilQFewG8wrUZ313qPygJvWlxjggYE0ArT0Pp8oX60yFtyNgUWIkB3WeEl6dQyw18oM/xgmeE/lxm+r8zwM8oK38ujrqFs8B94xGnuv69sg5wTAC+pHeOXoeUHgJ432lJYyPCKBNmJbQZcc/y/UqjwigDRXP6/y9+hwb8CehXQvXHmQ6HAa2YqYIW8xPbihgCvrq0unjjYyWf4L0BvwXakXbnxFV4RHHp86TGWOvkG/xTSZUCfTE1c80Nf4BWhsRdrtrlO7wO8IjPkdLQezu4yvCYhLdierGJzXIU/A7QmIZm+wuIavCIuFHmhCIzMkyvwirDYhbUCnlskpgvwI1ZRMm9uRx51Wj9bg/XUrp+VAf7I8GCl0Lj7vLt95Jp5iC0vT8pWWVS0RGjwieJkQoHXpgNyLigywsmUxX9eXpUeTO4kp9+stA2viAdNQlJHRebZRWzBKx52o0ZpgHvzNrUNeKuR0L60/CMqqvdhzuZZYZvXStvynVRiLeBe750h+AeATIyp6HXKadeUzN57iVkPK8UEL9/YooizaXsIbQoQ1H45gh8PmPa/mfAPAY7zucI3c3nXzUqTxjyJ2SFpEuUVqz6t5ndaAWkD+lLMc3lXbAjeJHrBFPJjsX6gC51u5qHkH9a/2UBzqOKkAAAAAElFTkSuQmCC"
+                  alt="play_button" />
+              </a>
+              <div class="VideoPage_hero_second_title">Новый релиз</div>
+              <div class="VideoPage_hero_second_title_2">
+                Улица белых роз
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="VideoPage_second_video_container">
+          <div class="VideoPage_video_inside_little" style="background: url('images/video_2.png') no-repeat 50%/cover;">
+            <div class="VideoPage_button_inside_little">
+              <a href="#" target="_blank" class="VideoPage_play_button_little">
+                <img class="VideoPage_play__button_image_little"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABNCAYAAAARtbwVAAAABHNCSVQICAgIfAhkiAAABARJREFUeF7lnElrFEEYhp2fIOjBg3jy6i9Q/4i4xAURNG4YjUtiVOJGxAgRTUSCC2644EX0IOjBQxRBCYKCENy3uO/b+LwhBROM9jLV3VXVBR9dzNR01/NWTXfVV19XZcxwqlarG8g2YuOwfuw81lmpVF6YMqEdKwIC/AqH6aPAveOzdQjQFRq4eCqAN3Nsj4C7wffzEeFWSCII/h5Ak2NCdVCuBRE+xyzvdDHBVxPW8DHlFyPAuYS/c654GngDcZHMXER44hxVzArVA69LfMJasd2I8CvmNZ0pVi+8AblDZiYC3HSGLEZFbMHrUrp37MdWI8L7GNcuvIhNeAPznMxyBDhWOF1EBbKAN5e8SmY2Igy4KkKW8GL+imkAtR0RvrsmQtbwhvc+mVkIcM0lAfKCN8yHyKxAhEEXRMgbXsyvsSbsICIkHV1a1awIeAPQN/xXuGuVKMHJioRXNX9gmiy10Qt0c8w1FQ1vYB+SmYMAl/OkdwXeMJ8i04gIz/IQwTV4MWtovB7rQoTfWYrgIrzhvU1GkyUdM0kuwwtY02T5D+VH/GhbAdfhDa+8R0sR4LRNAXyBN8zyHi1ABD0d6k6+wQtYztNNWAci/KxHAR/hDa9GhposaaSYKvkML2DNDQ5gTYjwNqkCvsMb3pdkViLA4SQChAJvmOU9kjtd/oPIFBq8gL9h27D2KO9RiPCmxdX66gXqDaOmkOEN8FEy8ibrvjAilQFewG8wrUZ313qPygJvWlxjggYE0ArT0Pp8oX60yFtyNgUWIkB3WeEl6dQyw18oM/xgmeE/lxm+r8zwM8oK38ujrqFs8B94xGnuv69sg5wTAC+pHeOXoeUHgJ432lJYyPCKBNmJbQZcc/y/UqjwigDRXP6/y9+hwb8CehXQvXHmQ6HAa2YqYIW8xPbihgCvrq0unjjYyWf4L0BvwXakXbnxFV4RHHp86TGWOvkG/xTSZUCfTE1c80Nf4BWhsRdrtrlO7wO8IjPkdLQezu4yvCYhLdierGJzXIU/A7QmIZm+wuIavCIuFHmhCIzMkyvwirDYhbUCnlskpgvwI1ZRMm9uRx51Wj9bg/XUrp+VAf7I8GCl0Lj7vLt95Jp5iC0vT8pWWVS0RGjwieJkQoHXpgNyLigywsmUxX9eXpUeTO4kp9+stA2viAdNQlJHRebZRWzBKx52o0ZpgHvzNrUNeKuR0L60/CMqqvdhzuZZYZvXStvynVRiLeBe750h+AeATIyp6HXKadeUzN57iVkPK8UEL9/YooizaXsIbQoQ1H45gh8PmPa/mfAPAY7zucI3c3nXzUqTxjyJ2SFpEuUVqz6t5ndaAWkD+lLMc3lXbAjeJHrBFPJjsX6gC51u5qHkH9a/2UBzqOKkAAAAAElFTkSuQmCC"
+                  alt="play_button" />
+              </a>
+              <div class="VideoPage_hero_second_title_2_little">
+                Миллион
+              </div>
+            </div>
+          </div>
+          <div class="VideoPage_video_inside_little" style="background: url('images/video_3.png') no-repeat 50%/cover;">
+            <div class="VideoPage_button_inside_little">
+              <a href="#" target="_blank" class="VideoPage_play_button_little">
+                <img class="VideoPage_play__button_image_little"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABNCAYAAAARtbwVAAAABHNCSVQICAgIfAhkiAAABARJREFUeF7lnElrFEEYhp2fIOjBg3jy6i9Q/4i4xAURNG4YjUtiVOJGxAgRTUSCC2644EX0IOjBQxRBCYKCENy3uO/b+LwhBROM9jLV3VXVBR9dzNR01/NWTXfVV19XZcxwqlarG8g2YuOwfuw81lmpVF6YMqEdKwIC/AqH6aPAveOzdQjQFRq4eCqAN3Nsj4C7wffzEeFWSCII/h5Ak2NCdVCuBRE+xyzvdDHBVxPW8DHlFyPAuYS/c654GngDcZHMXER44hxVzArVA69LfMJasd2I8CvmNZ0pVi+8AblDZiYC3HSGLEZFbMHrUrp37MdWI8L7GNcuvIhNeAPznMxyBDhWOF1EBbKAN5e8SmY2Igy4KkKW8GL+imkAtR0RvrsmQtbwhvc+mVkIcM0lAfKCN8yHyKxAhEEXRMgbXsyvsSbsICIkHV1a1awIeAPQN/xXuGuVKMHJioRXNX9gmiy10Qt0c8w1FQ1vYB+SmYMAl/OkdwXeMJ8i04gIz/IQwTV4MWtovB7rQoTfWYrgIrzhvU1GkyUdM0kuwwtY02T5D+VH/GhbAdfhDa+8R0sR4LRNAXyBN8zyHi1ABD0d6k6+wQtYztNNWAci/KxHAR/hDa9GhposaaSYKvkML2DNDQ5gTYjwNqkCvsMb3pdkViLA4SQChAJvmOU9kjtd/oPIFBq8gL9h27D2KO9RiPCmxdX66gXqDaOmkOEN8FEy8ibrvjAilQFewG8wrUZ313qPygJvWlxjggYE0ArT0Pp8oX60yFtyNgUWIkB3WeEl6dQyw18oM/xgmeE/lxm+r8zwM8oK38ujrqFs8B94xGnuv69sg5wTAC+pHeOXoeUHgJ432lJYyPCKBNmJbQZcc/y/UqjwigDRXP6/y9+hwb8CehXQvXHmQ6HAa2YqYIW8xPbihgCvrq0unjjYyWf4L0BvwXakXbnxFV4RHHp86TGWOvkG/xTSZUCfTE1c80Nf4BWhsRdrtrlO7wO8IjPkdLQezu4yvCYhLdierGJzXIU/A7QmIZm+wuIavCIuFHmhCIzMkyvwirDYhbUCnlskpgvwI1ZRMm9uRx51Wj9bg/XUrp+VAf7I8GCl0Lj7vLt95Jp5iC0vT8pWWVS0RGjwieJkQoHXpgNyLigywsmUxX9eXpUeTO4kp9+stA2viAdNQlJHRebZRWzBKx52o0ZpgHvzNrUNeKuR0L60/CMqqvdhzuZZYZvXStvynVRiLeBe750h+AeATIyp6HXKadeUzN57iVkPK8UEL9/YooizaXsIbQoQ1H45gh8PmPa/mfAPAY7zucI3c3nXzUqTxjyJ2SFpEuUVqz6t5ndaAWkD+lLMc3lXbAjeJHrBFPJjsX6gC51u5qHkH9a/2UBzqOKkAAAAAElFTkSuQmCC"
+                  alt="play_button" />
+              </a>
+              <div class="VideoPage_hero_second_title_2_little">
+                Женщина моей мечты
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="VideoPage_button_styles">
+          <a href="/" class="VideoPage_button_block">
+            <span class="VideoPage_second_title">Все клипы на YouTube</span>
+            <svg class="arrow-icon-desktop" xmlns="http://www.w3.org/2000/svg" width="43.609" height="19"
+              viewBox="0 0 43.609 18.785">
+              <g id="Group_163" data-name="Group 163" transform="translate(300.382 -2611.873)">
+                <path id="Path_496" data-name="Path 496" d="M8869,26.724l8.862-8.862L8869,9"
+                  transform="translate(-9135.694 2603.404)" fill="none" stroke="#666" stroke-width="1.5" />
+                <line id="Line_25" data-name="Line 25" x2="42.109" transform="translate(-300.382 2621.266)" fill="none"
+                  stroke="#666" stroke-width="1.5" />
+              </g>
+            </svg>
+            <svg class="arrow-icon-mobile" xmlns="http://www.w3.org/2000/svg" width="27.858" height="12">
+              <g fill="#666" data-name="Group 172">
+                <path d="m21.858 12.001-.678-.678 5.323-5.322L21.18.679l.678-.678 6 6Z" data-name="Контур 496" />
+                <path d="M26.9 6.48H0v-.958h26.9Z" data-name="Линия 25" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="Footer_footer_container">
+    <div class="Footer_container">
+      <div class="Footer_footer_links">
+        <div class="Footer_first_group_links">
+          <a href="/">Telegram</a><a href="/">Vk</a><a href="/">Ok</a><a href="/">Youtube</a>
+        </div>
+        <div class="Footer_second_group_links">
+          <a href="/">Apple music</a><a href="/">Яндекс.музыка</a>
+        </div>
+      </div>
+      <div class="Footer_footer_text">
+        <p>&copy; 2023 г. Март Бабаян - официальный сайт.</p>
+      </div>
+      <div class="Footer_footer_logic">
+        <p>Создание сайта <a href="/">Logic</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
