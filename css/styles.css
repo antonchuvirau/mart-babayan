@@ -4451,7 +4451,10 @@ body {
 
   .Poster_title_container {
     height: auto;
-    border-left: 1px solid #707070;
+    /* border-left: 1px solid #707070; */
+  }
+  .Poster_title_container .line {
+    display: block;
   }
 
   .Hero_hero {
