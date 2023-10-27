@@ -19,8 +19,8 @@
         </div>
         <div class="ButtonGroup_button_group__container">
           <a class="Header_button_nav" href="/biography.html">Биография</a>
-          <a class="Header_button_nav" href="/poster.html">Афиша</a>
-          <a class="Header_button_nav" href="/contact.html">Контакты</a>
+          <a class="Header_button_nav" href="/afisha.html">Афиша</a>
+          <a class="Header_button_nav" href="/contacts.html">Контакты</a>
         </div>
       </nav>
       <a href="/" class="Header_header_logo">
@@ -31,7 +31,6 @@
   <!-- BEGIN mobile menu -->
   <label for="check" class="BurgerMenu_button_burger">
     <input type="checkbox" id="check"/> 
-    <span></span>
     <span></span>
     <span></span>
   </label>
@@ -48,7 +47,7 @@
     <img class="BurgerMenu_image" src="images/logo-dark.png" alt="Header Image" />
     <div class="BurgerMenu_links">
       <a href="/music.html">Музыка</a><a href="/video">Видео</a><a href="/production.html">Продюсирование</a><a
-        href="/biography.html">Биография</a><a href="/poster">Афиша</a><a href="/contact.html">Контакты</a>
+        href="/biography.html">Биография</a><a href="/afisha.html">Афиша</a><a href="/contacts.html">Контакты</a>
     </div>
   </div>
   <!-- END mobile menu -->
@@ -56,10 +55,11 @@
     <section data-aos="fade-in" class="Hero_hero"></section>
     <section class="afisha-section">
       <div class="src_container Poster_poster-section__container">
-        <div class="Poster_poster-title">
+        <div class="Poster_poster-title title-box">
           <div class="Poster_title_container">
-            <h1 data-aos="fade-up" class="Poster_title_name">Афиша мероприятий</h1>
-            <a data-aos="fade-up" href="/poster" class="Poster_title_link">Смотреть все
+            <div data-aos="zoom-in-up" class="line title-box__line"></div>
+            <h1 data-aos="fade-right" data-aos-delay="150" class="Poster_title_name">Афиша мероприятий</h1>
+            <a data-aos="fade-up" data-aos-delay="300" href="/poster" class="Poster_title_link">Смотреть все
               <svg xmlns="http://www.w3.org/2000/svg" width="43.609" height="18.785">
                 <g data-name="Сгруппировать 146" fill="none" stroke="#666" stroke-width="1.5">
                   <path data-name="Контур 496" d="m33.688 18.255 8.862-8.862L33.688.531"></path>
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="Poster_poster-list">
-          <div data-aos="fade-up" data-aos-delay="100" class="PosterCard_poster-list-item">
+          <div data-aos="fade-up" data-aos-anchor=".Poster_title_link" data-aos-delay="500" class="PosterCard_poster-list-item">
             <div class="PosterCard_item_container">
               <div class="PosterCard_item_image">
                 <img class="PosterCard_item_image_value" src="images/poster_image_1.png"
@@ -99,9 +99,8 @@
                 <a href="#" class="PosterCard_item_link">Купить билет</a>
               </div>
             </div>
-            <div class="PosterCard_poster_third__section"></div>
           </div>
-          <div data-aos="fade-up" data-aos-delay="300" class="PosterCard_poster-list-item">
+          <div data-aos="fade-up" data-aos-delay="550" class="PosterCard_poster-list-item">
             <div class="PosterCard_item_container">
               <div class="PosterCard_item_image">
                 <img class="PosterCard_item_image_value" src="images/poster_image_2.png"
@@ -132,10 +131,9 @@
                 <a href="#" class="PosterCard_item_link">Купить билет</a>
               </div>
             </div>
-            <div class="PosterCard_poster_third__section"></div>
           </div>
         </div>
-        <a href="#" class="all-link afisha-section__all-link">Смотреть все
+        <a href="afisha.html" class="all-link afisha-section__all-link">Смотреть все
           <svg xmlns="http://www.w3.org/2000/svg" width="27.858" height="12">
             <g fill="#666" data-name="Group 175">
               <path d="m21.858 12-.678-.678L26.503 6 21.18.678 21.858 0l6 6Z" data-name="Контур 496"/>
@@ -149,18 +147,16 @@
       <div class="VideoSection_container">
         <div class="VideoSection_video_inside">
           <div class="VideoSection_video_container">
-            <button data-aos="fade-up" data-aos-delay="50" type="button" class="VideoSection_play_button">
+            <a href="https://youtu.be/fGSBQ39jWaU?si=SeJWZGXXZb0A0kgh" target="_blank" data-aos="fade-up" data-aos-delay="50" type="button" class="VideoSection_play_button">
               <svg class="VideoSection_play_image" xmlns="http://www.w3.org/2000/svg" width="31.501" height="38.132"
                 viewBox="0 0 31.501 38.132">
                 <path id="Контур_497" data-name="Контур 497"
                   d="M17.048,1.115a2.383,2.383,0,0,1,4.036,0L37.776,27.924A2.346,2.346,0,0,1,35.758,31.5H2.374A2.346,2.346,0,0,1,.356,27.924Z"
                   transform="translate(31.501) rotate(90)" fill="#fff"></path>
               </svg>
-            </button>
+            </a>
             <div  data-aos="fade-up" data-aos-delay="150" class="VideoSection_hero_second_title">Новый релиз</div>
-            <div  data-aos="fade-up" data-aos-delay="450" class="VideoSection_hero_second_title_2">
-              Улица белых роз
-            </div>
+            <div  data-aos="fade-up" data-aos-delay="450" class="VideoSection_hero_second_title_2">Женщина моей мечты</div>
           </div>
         </div>
       </div>
@@ -168,9 +164,10 @@
     <section class="music-section">
       <div class="Creation_container">
         <div class="Creation_creation">
-          <div class="Creation_creation_left">
-            <h2 data-aos="fade-up" class="Creation_creation_left__title">Творчество</h2>
-            <div data-aos="fade-up" data-aos-delay="50" class="Creation_creation_left__desription">
+          <div class="Creation_creation_left title-box">
+            <div data-aos="zoom-in-up" class="line title-box__line"></div>
+            <h2 data-aos="fade-right" data-aos-delay="150" class="Creation_creation_left__title">Творчество</h2>
+            <div data-aos="fade-up" data-aos-anchor=".Creation_creation_left__title" data-aos-delay="300" class="Creation_creation_left__desription">
               <p>Март Бабаян - российский певец, композитор и продюсер.</p>
               <p>
                 Исполнитель хитов: «Миллион» «Выходи за меня», «Папина
@@ -178,19 +175,20 @@
               </p>
               <p>Артист радио «ШАНСОН».</p>
             </div>
-            <a data-aos="fade-up" data-aos-delay="150" href="/poster" class="Creation_title_link">Все релизы<svg xmlns="http://www.w3.org/2000/svg"
-                width="43.609" height="18.785">
+            <a data-aos-anchor=".Creation_creation_left__desription" data-aos="fade-up" data-aos-delay="400" href="/music.html" class="Creation_title_link">Все релизы
+              <svg xmlns="http://www.w3.org/2000/svg" width="43.609" height="18.785">
                 <g data-name="Сгруппировать 146" fill="none" stroke="#666" stroke-width="1.5">
                   <path data-name="Контур 496" d="m33.688 18.255 8.862-8.862L33.688.531"></path>
                   <path data-name="Линия 25" d="M0 9.393h42.109"></path>
                 </g>
-              </svg></a>
+              </svg>
+            </a>
           </div>
           <div class="Creation_creation_right">
             <div data-aos="fade-up" data-aos-delay="450" class="Creation_creation_photo"><img src="images/creation_photo_1.png" alt="photo_1" /></div>
-            <div data-aos="fade-up" data-aos-delay="1350" class="Creation_creation_photo"><img src="images/music_3.png" alt="photo_2" /></div>
+            <div data-aos="fade-up" data-aos-delay="900" class="Creation_creation_photo"><img src="images/music_3.png" alt="photo_2" /></div>
           </div>
-          <a href="#" class="all-link music-section__all-link">Все релизы
+          <a data-aos="fade-up" data-aos-delay="150"  href="/music.html" class="all-link music-section__all-link">Все релизы
             <svg xmlns="http://www.w3.org/2000/svg" width="27.858" height="12">
               <g fill="#666" data-name="Group 175">
                 <path d="m21.858 12-.678-.678L26.503 6 21.18.678 21.858 0l6 6Z" data-name="Контур 496"/>
