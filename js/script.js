@@ -5,16 +5,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         duration: 1200,
-        easing: 'ease'
+        easing: 'ease',
+        offset: 80
     });
     const burgerEl = document.querySelector('.BurgerMenu_button_burger');
     const mobileMenu = document.querySelector('.BurgerMenu_menu');
+    const burgerMenuCheckboxEl = document.querySelector('.BurgerMenu_button_burger input');
     burgerEl.addEventListener('click', (e) => {
         e.preventDefault();
         mobileMenu.classList.toggle('BurgerMenu_menu_is-open');
         document.querySelector('html').classList.toggle('is-locked');
-        setTimeout(function () {
-            burgerEl.classList.toggle('BurgerMenu_button_burger_is-active');
-        }, 200);
+        burgerEl.classList.toggle('BurgerMenu_button_burger_is-active');
+        burgerMenuCheckboxEl.checked = !burgerMenuCheckboxEl.checked;
     });
 });
