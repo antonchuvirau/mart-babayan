@@ -4259,15 +4259,15 @@ body {
     bottom: 50px;
     max-width: 375px;
   }
-  .Contacts_title_block_info_text {
+  .Contacts_hidden_text .Contacts_title_block_info_text {
     font-size: 26px;
     color: #fff;
   }
-  .Contacts_title_block_info_text_2 {
+  .Contacts_hidden_text .Contacts_title_block_info_text_2 {
     font-size: 16px;
     color: #fff;
   }
-  .Contacts_links_decoration {
+  .Contacts_hidden_text .Contacts_links_decoration {
     display: inline-block;
     color: #fff;
   }
