@@ -1288,6 +1288,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   will-change: transform;
 }
 
+.BurgerMenu_button_burger span:last-child {
+  margin-bottom: 0;
+}
+
 .home-page .BurgerMenu_button_burger span {
   background: #fff;
 }
@@ -1310,12 +1314,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .BurgerMenu_button_burger input[type="checkbox"]:checked~span:nth-of-type(1) {
   transform-origin: bottom;
-  transform: rotatez(45deg) translate(8px, 11px);
+  width: 100%;
+  transform: rotatez(45deg)  translate(1px, 2px);
 }
 
 .BurgerMenu_button_burger input[type="checkbox"]:checked~span:nth-of-type(2) {
   transform-origin: top;
-  transform: rotatez(-45deg);
+  transform: rotatez(-45deg) translate(4px,-4px);
 }
 
 .BurgerMenu_button_burger input[type="checkbox"]:checked~span:nth-of-type(3) {
@@ -1590,7 +1595,7 @@ body {
 }
 
 .Poster_title_container {
-  border-left: 1px solid #707070;
+  /* border-left: 1px solid #707070; */
   display: flex;
   flex-direction: column;
   height: 260px;
@@ -1985,9 +1990,9 @@ body {
     background-image: url(../images/video_section_image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vw;
+    /* height: 76.92vw; */
     margin-top: 109px;
-    max-height: 810px;
+    /* max-height: 810px; */
     position: relative;
     width: 100%;
   }
@@ -1996,8 +2001,8 @@ body {
     background: rgba(0, 0, 0, 0.3);
     content: "";
     display: block;
-    height: 50vw;
-    max-height: 810px;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -2120,7 +2125,8 @@ body {
 }
 
 .Creation_creation_left {
-  border-left: 1px solid #707070;
+  position: relative;
+  /* border-left: 1px solid #707070; */
   padding-left: 30px;
 }
 
@@ -3368,14 +3374,18 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  transform: translateX(150%);
-  transition: transform .7s ease;
-  z-index: 999;
+  transition: opacity .5s linear;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
   overflow: hidden;
+  will-change: opacity;
 }
 
 .BurgerMenu_menu_is-open {
-  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 999;
 }
 
 .BurgerMenu_menu.BurgerMenu_open {
@@ -3474,7 +3484,7 @@ body {
 .Production_title_container_left {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -3490,6 +3500,10 @@ body {
   font-size: 22px;
   font-weight: var(--font-weight-medium);
   line-height: 1.45;
+}
+
+.Production_title_container_text_2 p {
+  max-width: 495px;
 }
 
 .Production_title_container_text_2_right p {
@@ -3619,7 +3633,7 @@ body {
 .Production_zara_block {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 37px;
 }
 
 .Production_margarita_block {
@@ -4208,6 +4222,35 @@ body {
   display: none;
 }
 
+.top-text-1-left {
+  max-width: 583px;
+}
+.top-text-3-right {
+  max-width: 530px;
+}
+.top-text-4-right {
+  max-width: 575px;
+}
+.line {
+  width: 1px;
+  height: 100%;
+  background: #707070;
+}
+.title-box {
+  /* position: relative; */
+}
+.title-box__line {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 1201px) {
+  .PosterCard_item_date {
+    min-width: 175px;
+  }
+}
+
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
   .Contacts_title_blocks {
     gap: 75px;
@@ -4215,6 +4258,9 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .line {
+    display: none;
+  }
   .Footer_container {
     padding-bottom: 80px;
   }
@@ -4309,7 +4355,18 @@ body {
   }
 
   .PosterCard_item_container {
+    position: relative;
     padding-left: 0;
+  }
+
+  .PosterCard_item_container::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 230px;
+    background: #707070;
+    top: 0;
+    left: 100%;
   }
 
   .PosterCard_item_description {
@@ -4321,6 +4378,10 @@ body {
 
   .Poster_poster-section__container {
     padding: 0 15px;
+  }
+
+  .PosterCard_poster-list-item {
+    width: 100%;
   }
 
   .PosterCard_poster-list-item:not(:last-child) {
@@ -4390,6 +4451,7 @@ body {
 
   .Poster_title_container {
     height: auto;
+    border-left: 1px solid #707070;
   }
 
   .Hero_hero {
@@ -4747,6 +4809,12 @@ body {
 
   .BurgerMenu_button_burger {
     display: flex;
+  }
+  .VideoSection_video_inside {
+    height: 76.92vw;
+  }
+  .VideoSection_videosection {
+    background-position: 50% 50%;
   }
 }
 
