@@ -4249,6 +4249,28 @@ body {
   .PosterCard_item_date {
     min-width: 175px;
   }
+  .Contacts_photo_block {
+    position: relative;
+  }
+  .Contacts_hidden_text {
+    display: block;
+    position: absolute;
+    right: 55px;
+    bottom: 50px;
+    max-width: 375px;
+  }
+  .Contacts_title_block_info_text {
+    font-size: 26px;
+    color: #fff;
+  }
+  .Contacts_title_block_info_text_2 {
+    font-size: 16px;
+    color: #fff;
+  }
+  .Contacts_links_decoration {
+    display: inline-block;
+    color: #fff;
+  }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
