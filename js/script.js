@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         duration: 1200,
         easing: 'ease',
-        offset: 80
+        offset: 50,
+        anchor_placement: 'center bottom'
     });
     const burgerEl = document.querySelector('.BurgerMenu_button_burger');
     const mobileMenu = document.querySelector('.BurgerMenu_menu');
