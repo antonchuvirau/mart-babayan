@@ -22,7 +22,7 @@ function startAuto() {
   clearInterval(Auto);
   Auto = setInterval(function(){ 
     slideshow.next()
-  }, 5000);
+  }, 3500);
 }
 
 startAuto()
