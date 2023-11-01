@@ -19,9 +19,9 @@ Observer.create({
 var Auto;
 
 function startAuto() {
-  clearInterval(Auto);    
+  clearInterval(Auto);
   Auto = setInterval(function(){ 
-    setActive(slideshow.next());
+    slideshow.next()
   }, 5000);
 }
 
