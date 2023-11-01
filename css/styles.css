@@ -4590,9 +4590,9 @@ body {
     display: block;
   }
 
-  .Hero_hero {
+  .main-template__hero-section {
     height: 138.46vw;
-    max-height: none;
+    max-height: 540px;
   }
 
   .Header_header {
