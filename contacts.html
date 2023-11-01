@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="Header_header">
+  <header data-aos="fade" class="Header_header">
     <div class="Header_container">
       <nav class="Header_header_nav">
         <div class="ButtonGroup_button_group__container">
@@ -32,9 +32,10 @@
     <div class="Contacts_container inner-template__container">
       <div class="Contacts_title_block">
         <div class="Contacts_container__col inner-template__col">
-          <div class="page-title contacts-template__title">
-            <h1 class="page-title__value">Контакты</h1>
-            <a download href="#" class="page-title__link">
+          <div class="page-title contacts-template__title title-box">
+            <div data-aos="zoom-in-up" class="line title-box__line"></div>
+            <h1 data-aos="fade-right" class="page-title__value">Контакты</h1>
+            <a data-aos="fade-up" data-aos-delay="350" download href="#" class="page-title__link">
               <span class="page-title__link-name">Промо материал</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="43.608" height="19">
                 <g fill="none" stroke="#666" stroke-width="1.5" data-name="Group 159">
@@ -47,21 +48,21 @@
         </div>
         <div class="Contacts_container__col inner-template__col inner-template__col_is-wider Contacts_photo_block">
           <div class="Contacts_title_blocks">
-            <div class="Contacts_title_block_info">
+            <div data-aos="fade-up" data-aos-delay="400" class="Contacts_title_block_info">
               <p class="Contacts_title_block_info_text">Концертный директор</p>
               <p class="Contacts_title_block_info_text_2">Марина Якуш
                 <a href="tel:79199970020">+7 (919) 997-00-20</a>
               </p>
               <a download class="Contacts_links_decoration" href="mailto:pr.mart@mail.ru">pr.mart@mail.ru</a>
             </div>
-            <div class="Contacts_title_block_info">
+            <div data-aos="fade-up" data-aos-delay="450" class="Contacts_title_block_info">
               <p class="Contacts_title_block_info_text">Пиар и пресс-служба</p>
               <p class="Contacts_title_block_info_text_2">Анна Исаева
                 <a download href="tel:79036196600">+7 (903) 619-66-00</a>
               </p>
               <a class="Contacts_links_decoration" href="mailto:isaeva-pr@yandex.ru">isaeva-pr@yandex.ru</a>
             </div>
-            <div class="Contacts_title_block_info">
+            <div data-aos="fade-up" data-aos-delay="500" class="Contacts_title_block_info">
               <p class="Contacts_title_block_info_text">Звукорежиссер</p>
               <p class="Contacts_title_block_info_text_2">Алексей Зиновьев
                 <a href="tel:79851471431">+7 (985) 147-14-31</a>
@@ -69,17 +70,17 @@
               <a download class="Contacts_links_decoration" href="#">Скачать тех.райдер</a>
             </div>
           </div>
-          <a download href="#" class="all-link contacts-template__all-link">Промо материал
+          <a data-aos="fade-up" data-aos-delay="550" download href="#" class="all-link contacts-template__all-link">Промо материал
             <svg xmlns="http://www.w3.org/2000/svg" width="27.858" height="12">
               <g fill="#666" data-name="Group 175">
-                <path d="m21.858 12-.678-.678L26.503 6 21.18.678 21.858 0l6 6Z" data-name="Контур 496"/>
-                <path d="M26.9 6.479H0v-.958h26.9Z" data-name="Линия 25"/>
+                <path d="m21.858 12-.678-.678L26.503 6 21.18.678 21.858 0l6 6Z" data-name="Контур 496" />
+                <path d="M26.9 6.479H0v-.958h26.9Z" data-name="Линия 25" />
               </g>
             </svg>
           </a>
-          <img class="Contacts_music_photo" src="images/contact_photo.png" alt="contact_photo" />
-          <img class="Contacts_music_photo_small" src="images/contact_photo_2.png" alt="contact_photo_2" />
-          <div class="Contacts_hidden_text">
+          <img data-aos="fade-up" data-aos-delay="550" class="Contacts_music_photo" src="images/contact_photo.png" alt="contact_photo" />
+          <img data-aos="fade-up" data-aos-delay="600" class="Contacts_music_photo_small" src="images/contact_photo_2.png" alt="contact_photo_2" />
+          <div data-aos="fade-up" data-aos-delay="600" class="Contacts_hidden_text">
             <p class="Contacts_title_block_info_text">Мы открыты к сотрудничеству с авторами песен и текстов</p>
             <p class="Contacts_title_block_info_text_2">Демо записи и тексты песен просьба присылать на почту с именем,
               телефоном и почтой.</p>
@@ -89,7 +90,7 @@
       </div>
     </div>
   </main>
-  <footer class="Footer_footer_container">
+  <footer data-aos="fade" class="Footer_footer_container">
     <div class="Footer_container">
       <div class="Footer_footer_links">
         <div class="Footer_first_group_links">
@@ -107,20 +108,20 @@
       </div>
     </div>
   </footer>
-    <!-- BEGIN mobile menu -->
-    <label for="check" class="BurgerMenu_button_burger">
-      <input type="checkbox" id="check" />
-      <span></span>
-      <span></span>
-    </label>
-    <div class="BurgerMenu_menu">
-      <img class="BurgerMenu_image" src="images/logo-dark.png" alt="Header Image" />
-      <div class="BurgerMenu_links">
-        <a href="/music.html">Музыка</a><a href="/video">Видео</a><a href="/production.html">Продюсирование</a><a
-          href="/biography.html">Биография</a><a href="/afisha">Афиша</a><a href="/contacts.html">Контакты</a>
-      </div>
+  <!-- BEGIN mobile menu -->
+  <label for="check" class="BurgerMenu_button_burger">
+    <input type="checkbox" id="check" />
+    <span></span>
+    <span></span>
+  </label>
+  <div class="BurgerMenu_menu">
+    <img class="BurgerMenu_image" src="images/logo-dark.png" alt="Header Image" />
+    <div class="BurgerMenu_links">
+      <a href="/music.html">Музыка</a><a href="/video">Видео</a><a href="/production.html">Продюсирование</a><a
+        href="/biography.html">Биография</a><a href="/afisha">Афиша</a><a href="/contacts.html">Контакты</a>
     </div>
-    <!-- END mobile menu -->
+  </div>
+  <!-- END mobile menu -->
   <script src="js/script.js"></script>
 </body>
 

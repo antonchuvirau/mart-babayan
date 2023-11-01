@@ -9,11 +9,12 @@
 </head>
 
 <body>
-  <header class="Header_header">
+  <header data-aos="fade" class="Header_header">
     <div class="Header_container">
       <nav class="Header_header_nav">
         <div class="ButtonGroup_button_group__container">
-          <a class="Header_button_nav Header_button_nav_is-active Header_button_nav_style-dark" href="/music.html">Музыка</a>
+          <a class="Header_button_nav Header_button_nav_is-active Header_button_nav_style-dark"
+            href="/music.html">Музыка</a>
           <a class="Header_button_nav Header_button_nav_style-dark" href="/video.html">Видео</a>
           <a class="Header_button_nav Header_button_nav_style-dark" href="/production.html">Продюсирование</a>
         </div>
@@ -23,16 +24,17 @@
           <a class="Header_button_nav Header_button_nav_style-dark" href="/contacts.html">Контакты</a>
         </div>
       </nav>
-      <a href="/" class="Header_header_logo"><img class="Header_header_logo_image" src="images/logo-dark.png" alt="header_image" /></a>
+      <a href="/" class="Header_header_logo"><img class="Header_header_logo_image" src="images/logo-dark.png"
+          alt="header_image" /></a>
     </div>
   </header>
   <main class="App_main-template App_inner-template inner-template music-template">
     <div class="Music_container inner-template__container">
       <div class="Music_title_container">
-        <div class="page-title music-template__title">
+        <div data-aos="fade-right" class="page-title music-template__title">
           <h1 class="page-title__value">Музыка</h1>
         </div>
-        <div class="Music_second_title">
+        <div data-aos="fade-up" class="Music_second_title">
           <a class="Music_second_title_is-active" href="/">Все релизы</a>
           <a href="/">Альбомы</a>
           <a href="/">Синглы</a>
@@ -40,23 +42,33 @@
       </div>
       <div class="Music_music_container">
         <div class="Music_music_col">
-          <div class="Music_music_photo_big">
+          <div data-aos="fade-up" data-aos-delay="200" class="Music_music_photo_big">
             <img src="images/music_1.png" alt="music_1" />
           </div>
           <div class="Music_music_photo_little_container">
-            <div class="Music_music_photo_little"><img src="images/music_2.png" alt="music_2" /></div>
-            <div class="Music_music_photo_little"><img src="images/music_3.png" alt="music_3" /></div>
+            <div data-aos="fade-up" data-aos-delay="600" class="Music_music_photo_little">
+              <img src="images/music_2.png" alt="music_2" />
+            </div>
+            <div data-aos="fade-up" data-aos-delay="650" class="Music_music_photo_little">
+              <img src="images/music_3.png" alt="music_3" />
+            </div>
           </div>
         </div>
         <div class="Music_music_photo_flex">
-          <div class="Music_music_photo_little"><img src="images/music_4.png" alt="music_4" /></div>
-          <div class="Music_music_photo_little"><img src="images/music_5.png" alt="music_4" /></div>
-          <div class="Music_music_photo_little"><img src="images/music_6.png" alt="music_4" /></div>
+          <div data-aos="fade-up" data-aos-delay="200" class="Music_music_photo_little">
+            <img src="images/music_4.png" alt="music_4" />
+          </div>
+          <div data-aos="fade-up" data-aos-delay="300" class="Music_music_photo_little">
+            <img src="images/music_5.png" alt="music_4" />
+          </div>
+          <div data-aos="fade-up" data-aos-delay="400" class="Music_music_photo_little">
+            <img src="images/music_6.png" alt="music_4" />
+          </div>
         </div>
       </div>
     </div>
   </main>
-  <footer class="Footer_footer_container">
+  <footer data-aos="fade" class="Footer_footer_container">
     <div class="Footer_container">
       <div class="Footer_footer_links">
         <div class="Footer_first_group_links">
@@ -66,14 +78,14 @@
           <a href="/">Apple music</a><a href="/">Яндекс.музыка</a>
         </div>
       </div>
-        <div class="Footer_footer_text">
-            <p>&copy; 2023 г. Март Бабаян - официальный сайт.</p>
-        </div>
-        <div class="Footer_footer_logic">
-            <p>Создание сайта <a href="/">Logic</a></p>
-        </div>
+      <div class="Footer_footer_text">
+        <p>&copy; 2023 г. Март Бабаян - официальный сайт.</p>
+      </div>
+      <div class="Footer_footer_logic">
+        <p>Создание сайта <a href="/">Logic</a></p>
+      </div>
     </div>
-</footer>
+  </footer>
   <!-- BEGIN mobile menu -->
   <label for="check" class="BurgerMenu_button_burger">
     <input type="checkbox" id="check" />
@@ -88,7 +100,7 @@
     </div>
   </div>
   <!-- END mobile menu -->
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
