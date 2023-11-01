@@ -21,9 +21,8 @@ var Auto;
 function startAuto() {
   clearInterval(Auto);    
   Auto = setInterval(function(){ 
-    element = slideshow.next();
-    setActive(element);
-  }, 3000);
+    setActive(slideshow.next());
+  }, 5000);
 }
 
 startAuto()
