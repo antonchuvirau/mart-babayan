@@ -1248,6 +1248,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   position: absolute;
   top: 95px;
   width: 100%;
+  z-index: 10;
 }
 
 .Header_container {
@@ -4355,6 +4356,10 @@ body {
 	background-color: #ccc;
 }
 
+.biography-template__title::before, .contacts-template__title::before {
+  content: none;
+}
+
 
 @media screen and (min-width: 1201px) {
   .PosterCard_item_date {
@@ -4763,6 +4768,10 @@ body {
 
   .contacts-template__title .page-title__link {
     display: none;
+  }
+
+  .contacts-template__title .line {
+    display: block;
   }
 
   .contacts-template__all-link {
