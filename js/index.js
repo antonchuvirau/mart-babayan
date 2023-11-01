@@ -1,4 +1,4 @@
-import { preloadImages } from '../utils.js'; // Utility function to preload images
+import { preloadImages } from './utils.js'; // Utility function to preload images
 import { Slideshow } from './slideshow.js';
 
 const slides = document.querySelector('.slides');
