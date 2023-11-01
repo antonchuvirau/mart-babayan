@@ -1432,38 +1432,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 }
 
-.Hero_hero {
-  background: url("../images/hero-img.webp") no-repeat 50% / cover;
-  height: 51.25vw;
-  max-height: 820px;
-  position: relative;
-}
-
-.Hero_hero:before {
-  background: rgba(0, 0, 0, 0.3);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-@media (max-width: 1200px) {
-  .Hero_hero:before {
-    display: none;
-  }
-
-  .Hero_hero {
-    background: url("../images/hero_image_mobile.png") no-repeat 50% / cover;
-    height: 540px;
-    position: relative;
-    width: 100%;
-  }
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -4244,6 +4212,149 @@ body {
   left: 0;
   top: 0;
 }
+
+/* @media (max-width: 1200px) {
+  .Hero_hero:before {
+    display: none;
+  }
+
+  .Hero_hero {
+    background: url("../images/hero_image_mobile.png") no-repeat 50% / cover;
+    height: 540px;
+    position: relative;
+    width: 100%;
+  }
+} */
+
+.main-template__hero-section {
+  height: 51.25vw;
+  max-height: 820px;
+  position: relative;
+}
+
+.slide__img:before {
+  background: rgba(0, 0, 0, 0.3);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slides {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 100%;
+	place-items: center;
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	grid-area: 1 / 1 / -1 / -1;
+	pointer-events: none;
+	opacity: 0;
+	overflow: hidden;
+	position: relative;
+	display: grid;
+	place-items: center;
+	will-change: transform, opacity;
+}
+
+.slide--current {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.deco {
+	width: 100%;
+	height: 100%;
+	grid-area: 1 / 1 / -1 / -1;
+	pointer-events: none;
+	position: relative;
+	opacity: 0;
+	background: #8c718e;
+	will-change: transform, opacity;
+}
+
+.deco--1 {
+	background: #d4503e;
+}
+
+.deco--2 {
+	background: #1c1a1a;
+}
+
+.deco--3 {
+	background: #4e4141;
+}
+
+.deco--4 {
+	background: #000;
+}
+
+.deco--5 {
+	background: #060b17;
+}
+
+.deco--6 {
+	background: #34365c;
+}
+
+.deco--7 {
+	background: #9f6794;
+}
+
+.slide__img {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	will-change: transform, opacity, filter;
+}
+
+.demo-2 .slide__img {
+	width: 120%;
+	height: 120%;
+}
+
+.slides-nav {
+	grid-area: nav;
+	display: flex;
+	gap: 0.5rem;
+	align-self: end;
+	align-items: center;
+}
+
+.slides-nav::before {
+	content: 'scroll / drag';
+	margin-right: 2rem;
+}
+
+.slides-nav__item {
+	border: 0;
+	background: #fff;
+	color: #000;
+	width: 60px;
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.slides-nav__item:hover {
+	background-color: #ccc;
+}
+
 
 @media screen and (min-width: 1201px) {
   .PosterCard_item_date {
