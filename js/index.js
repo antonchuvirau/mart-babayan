@@ -21,11 +21,11 @@ var Auto;
 function startAuto() {
   clearInterval(Auto);
   Auto = setInterval(function(){ 
-    slideshow.next()
-  }, 4500);
+    slideshow.next();
+  }, 5000);
 }
 
-startAuto()
+startAuto();
 
 // Preload all images. Once all images are preloaded, remove the 'loading' class from the body.
 preloadImages('.slide__img').then(() => document.body.classList.remove('loading'));
