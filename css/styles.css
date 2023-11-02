@@ -3344,12 +3344,12 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  transition: opacity .5s linear;
-  z-index: -1;
-  pointer-events: none;
   opacity: 0;
+  transition: all .7s ease;
+  transform-origin: 0 50%;
+  pointer-events: none;
   overflow: hidden;
-  will-change: opacity;
+  will-change: transform;
 }
 
 .BurgerMenu_menu_is-open {
